@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Astro';
+    src: url('./Astro.ttf');
+}
+
+h1 {
+    font-family: 'Astro';
+    font-size: 3rem;
+    color: cyan;
+}
