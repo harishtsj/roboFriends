@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/harishtsj/roboFriends/static/css/main.38be7917.css",
+    "main.js": "/harishtsj/roboFriends/static/js/main.c6364f9d.js",
+    "static/js/787.c2cff050.chunk.js": "/harishtsj/roboFriends/static/js/787.c2cff050.chunk.js",
+    "static/media/Astro.ttf": "/harishtsj/roboFriends/static/media/Astro.5d5a98b877d8325cae38.ttf",
+    "index.html": "/harishtsj/roboFriends/index.html",
+    "main.38be7917.css.map": "/harishtsj/roboFriends/static/css/main.38be7917.css.map",
+    "main.c6364f9d.js.map": "/harishtsj/roboFriends/static/js/main.c6364f9d.js.map",
+    "787.c2cff050.chunk.js.map": "/harishtsj/roboFriends/static/js/787.c2cff050.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38be7917.css",
+    "static/js/main.c6364f9d.js"
+  ]
+}
