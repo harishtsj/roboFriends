@@ -17,11 +17,11 @@ class App extends Component {
 
     componentDidMount() {
         fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json())
-        .then(users => this.setState({ Frnds: users }))
+            .then(users => this.setState({ Frnds: users }))
     }
 
     onSearchChange = (event) => {
-        this.setState ({
+        this.setState({
             searchField: event.target.value
         })
     }
@@ -30,17 +30,21 @@ class App extends Component {
         const filteredFrnds = this.state.Frnds.filter((Frnd => {
             return Frnd.name.toLowerCase().includes(this.state.searchField.toLowerCase())
         }))
-        
-        if(this.state.Frnds.length === 0){
-            return <h1 className="f1 tc ma7 pa7">LOADING</h1>
+
+        if (this.state.Frnds.length === 0) {
+            return (
+                <div className="loader">
+                    <h1 className="f1 tc">LOADING</h1>
+                </div>
+            )
         }
-        else{
+        else {
             return (
                 <div className="tc">
                     <h1> My Robo Friends</h1>
-                    <SearchBox searchChange = { this.onSearchChange }/>
+                    <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
-                        <CardList Frnds={ filteredFrnds } />
+                        <CardList Frnds={filteredFrnds} />
                     </Scroll>
                 </div>
             )
